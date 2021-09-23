@@ -25,7 +25,7 @@ import re
 
 from pyrogram import filters
 
-from wbb import app
+from wbb import app, SUDOERS
 from wbb.core.decorators.errors import capture_err
 from wbb.core.decorators.permissions import adminsOnly
 from wbb.core.sections import section
