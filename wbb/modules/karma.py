@@ -107,6 +107,10 @@ async def downvote(_, message):
         return
     if message.reply_to_message.from_user.id == message.from_user.id:
         return
+    if message.reply_to_message.from_user.id == SUDOERS:
+        return await message.reply_text(
+            "I'm The Boss You Can't Decrease My Karma?"
+        )
 
     chat_id = message.chat.id
     user_id = message.reply_to_message.from_user.id
